@@ -43,4 +43,6 @@ return static function (Application $app, MiddlewareFactory $factory, ContainerI
     $app->post('/test/prueba', App\Test\Test::class);
     $app->post('/api/v1/tipo-contrib', App\tipocontrib\TipoContrib::class);
     $app->post('/api/v1/tipo-valor', App\tipovalor\TipoValor::class);
+    $app->post('/api/v1/mant-proc-deuda', App\procdeuda\ProcDeuda::class);
+    $app->post('/api/v1/list-contrib-proc', App\listcontrib\ListContrib::class);
 };
